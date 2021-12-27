@@ -1,0 +1,6 @@
+development:
+  clients:
+    default:
+      uri: mongodb+srv://<%=ENV["MONGODB_USER"]%>:<%=ENV["MONGODB_PWD"]%>@<%=ENV["MONGODB_URL"]%>/blog_development?retryWrites=true&w=majority
+      options:
+        server_selection_timeout: 5

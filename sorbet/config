@@ -1,0 +1,3 @@
+--dir
+.
+--ignore=config/spring.rb
