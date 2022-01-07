@@ -46,7 +46,7 @@ class MongoidDocument < Tapioca::Compilers::Dsl::Base
       field_type
     end
 
-    T.nilable(type)
+    "T.nilable(#{type})"
   end
 
   def return_type_for(field_type)
@@ -57,6 +57,6 @@ class MongoidDocument < Tapioca::Compilers::Dsl::Base
       field_type
     end
 
-    T.nilable(type)
+    "T.nilable(#{type})"
   end
 end

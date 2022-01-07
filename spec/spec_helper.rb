@@ -5,15 +5,12 @@ require "tapioca/internal"
 require "minitest/autorun"
 require "minitest/spec"
 require "minitest/hooks/default"
-require "minitest/reporters"
 require "byebug"
 
 require "tapioca/helpers/test/content"
 require "tapioca/helpers/test/template"
 require "tapioca/helpers/test/isolation"
-require_relative "./dsl_spec_helper"
-
-Minitest::Reporters.use!(Minitest::Reporters::SpecReporter.new(color: true))
+# require_relative "./dsl_spec_helper"
 
 module Minitest
   class Test
